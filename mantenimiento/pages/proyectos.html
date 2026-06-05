@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Proyectos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/mantenimiento/css/style.css">
+</head>
+<body>
+<div id="preloader">...</div>
+<div id="mouseFollower"></div>
+<div class="topbar">...</div>
+<div id="header-placeholder"></div>
+<main>
+  <section class="page-header"><div class="container"><h1>Proyectos Destacados</h1><p>Casos de éxito en minería e industria</p></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/chinalco.jpg" alt="Chinalco"><h3>Minera Chinalco</h3><p>Planta de trituración primaria, secundaria y terciaria. Montaje, operación y sistema de control de polvo.</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/espinar.jpg" alt="Espinar"><h3>Planta de Trituración Espinar – Cusco (Obrainsa)</h3><p>Montaje, operación, control de polvo y mantenimiento correctivo/preventivo.</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/cajamarca.jpg" alt="Matkal"><h3>Planta de Trituración Móvil – Matkal (Cajamarca)</h3><p>Ingeniería de diseño, montaje, operación y control de polvo.</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/reservorio-nexa.jpg" alt="Reservorio Nexa"><h3>Reservorio de Agua Potable – Nexa Resources</h3><p>Construcción de reservorio de 25,000 litros, muro de contención y cerco perimétrico. Estudio de mecánica de suelos y expediente técnico.</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/planta-relaves.jpg" alt="Planta de Relaves"><h3>Planta de Filtrado de Relaves (PFR) – Pan American Silver</h3><p>Análisis macro granulométrico, ensayos de rocas (carga puntual y propiedades físicas).</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/cierre-desmontera.jpg" alt="Cierre Excelsior"><h3>Cierre de Desmontera Excelsior – Consorcio San Camilo</h3><p>Ensayos de suelos (compactación, cimentación) y control de calidad de concreto endurecido.</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/nexa-piep.jpg" alt="PIET"><h3>Programa Integral de Educación Temprana (PIET) – Nexa</h3><p>Ensayos de suelos con fines de cimentación.</p></div>
+        <div class="project-item"><img src="/mantenimiento/img/proyectos/activos-mineros.jpg" alt="Activos Mineros"><h3>Inclinómetros – Activos Mineros S.A.C.</h3><p>Suministro e instalación de 03 inclinómetros en dique de relaves Quiulacocha. Estudios de suelos, rocas, logueo geomecánico (RMR Bieniawski), expediente técnico y ensayos de permeabilidad (Lugeon/Lefranc).</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="footer-placeholder"></div>
+<a href="https://wa.me/51963665214" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/mantenimiento/js/preloader.js"></script>
+<script src="/mantenimiento/js/mouse-follower.js"></script>
+<script>
+  AOS.init();
+  fetch('/mantenimiento/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/mantenimiento/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/mantenimiento/js/menu.js"></script>
+</body>
+</html>

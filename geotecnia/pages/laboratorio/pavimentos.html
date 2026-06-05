@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Laboratorio de Pavimentos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Laboratorio de Pavimentos</h1><p>Ensayos en mezclas asfálticas y pavimentos</p></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="ensayos-table">
+        <table>
+          <thead><tr><th>Código</th><th>Descripción</th><th>Norma</th></tr></thead>
+          <tbody>
+            <tr><td>LP-01</td><td>Adherencia en agregado fino (Riedel y Weber)</td><td>MTC E220</td></tr>
+            <tr><td>LP-02</td><td>Diseño de mezcla asfáltica en caliente o frío (MAC)</td><td>ASTM D1559</td></tr>
+            <tr><td>LP-03</td><td>Elaboración de briquetas Marshall</td><td>ASTM D6923</td></tr>
+            <tr><td>LP-04</td><td>Ensayo de rugosidad Merlin</td><td>ASTM E1926</td></tr>
+            <tr><td>LP-05</td><td>Espesor o altura de briquetas de mezcla asfáltica</td><td>ASTM D3549</td></tr>
+            <tr><td>LP-06</td><td>Estabilidad y flujo Marshall</td><td>ASTM C6927</td></tr>
+            <tr><td>LP-07</td><td>Extracción de testigo diamantino de 4″</td><td>Procedimiento interno</td></tr>
+            <tr><td>LP-08</td><td>Lavado asfáltico (incluye % de asfalto)</td><td>ASTM D2172</td></tr>
+            <tr><td>LP-09</td><td>Péndulo de fricción TRRL</td><td>ASTM E1960</td></tr>
+            <tr><td>LP-10</td><td>Peso específico máximo teórico (Rice)</td><td>ASTM D2041</td></tr>
+            <tr><td>LP-11</td><td>Peso unitario de mezcla asfáltica compactada</td><td>ASTM D1188</td></tr>
+            <tr><td>LP-12</td><td>Resistencia al daño inducido por humedad (Lottman)</td><td>ASTM D4867</td></tr>
+            <tr><td>LP-13</td><td>Rueda cargada de Hamburgo</td><td>AASHTO T324</td></tr>
+            <tr><td>LP-14</td><td>Textura superficial por círculo de arena</td><td>ASTM E965</td></tr>
+            <tr><td>LP-15</td><td>Viga Benkelman</td><td>ASTM D4695</td></tr>
+            <tr><td>LP-16</td><td>Penetración dinámica de cono (PDC)</td><td>ASTM D6951</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/geotecnia/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

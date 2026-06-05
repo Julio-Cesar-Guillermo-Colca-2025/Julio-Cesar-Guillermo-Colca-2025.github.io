@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Contáctanos</h1></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</li>
+            <li><i class="fas fa-phone-alt"></i> +51 963 665 214</li>
+            <li><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</li>
+            <li><i class="fas fa-envelope"></i> zemcoingenieros@gmail.com</li>
+          </ul>
+          <p style="margin-top: 20px; font-weight: 600;">Síguenos en nuestras redes sociales</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/zemcoingenierossac?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/zemcoingenieros/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="tel" placeholder="Teléfono (opcional)">
+            <textarea rows="5" placeholder="Mensaje o consulta" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.7797026711896!2d-76.2711312258433!3d-10.67420038946842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91086da6ef8f2d0f%3A0x205f8470293c5a3c!2sZEMCO%20Ingenieros!5e0!3m2!1ses!2spe!4v1725560179375!5m2!1ses!2spe" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+  fetch('/geotecnia/footer.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Mensaje enviado (demo). En la versión real se enviaría a su correo.');
+    this.reset();
+  });
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

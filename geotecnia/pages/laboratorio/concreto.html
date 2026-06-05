@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Laboratorio de Concreto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Laboratorio de Concreto</h1><p>Ensayos al concreto en estado fresco y endurecido</p></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="ensayos-table">
+        <table>
+          <thead><tr><th>Código</th><th>Descripción</th><th>Norma</th></tr></thead>
+          <tbody>
+            <tr><td>LC-01</td><td>Absorción de energía en paneles de Shotcrete</td><td>14488-5 / EFNARC</td></tr>
+            <tr><td>LC-02</td><td>Asentamiento (slump)</td><td>ASTM C143</td></tr>
+            <tr><td>LC-03</td><td>Compresión de probetas de concreto endurecido</td><td>ASTM C39</td></tr>
+            <tr><td>LC-04</td><td>Compresión de testigo diamantino</td><td>ASTM C39</td></tr>
+            <tr><td>LC-05</td><td>Contenido de aire por presión Washington</td><td>ASTM C231</td></tr>
+            <tr><td>LC-06</td><td>Densidad, absorción y % de vacíos</td><td>ASTM C642</td></tr>
+            <tr><td>LC-07</td><td>Descripción petrográfica macroscópica</td><td>ASTM C856</td></tr>
+            <tr><td>LC-08</td><td>Diseño de mezclas de concreto</td><td>ACI 211.1</td></tr>
+            <tr><td>LC-09</td><td>Diseño de mezclas para unidades de albañilería</td><td>REF. ACI 211.1</td></tr>
+            <tr><td>LC-10</td><td>Esclerometría (10 mediciones por punto)</td><td>ASTM C805</td></tr>
+            <tr><td>LC-11</td><td>Evaluación de agrietamiento por contracción plástica</td><td>ASTM C1579</td></tr>
+            <tr><td>LC-12</td><td>Extracción de testigos de concreto (6″ a 8″)</td><td>ASTM C42</td></tr>
+            <tr><td>LC-13</td><td>Extracción de testigos (hasta 4″)</td><td>ASTM C42</td></tr>
+            <tr><td>LC-14</td><td>Exudación</td><td>ASTM C232</td></tr>
+            <tr><td>LC-15</td><td>Flexión en prismas al tercio central</td><td>ASTM C78</td></tr>
+            <tr><td>LC-16</td><td>Grado de carbonatación</td><td>EN 13295</td></tr>
+            <tr><td>LC-17</td><td>Módulo de elasticidad dinámico – ultrasonido</td><td>ASTM C597</td></tr>
+            <tr><td>LC-18</td><td>Módulo de elasticidad estático</td><td>ASTM C469</td></tr>
+            <tr><td>LC-19</td><td>Monitoreo de concreto fresco</td><td>ASTM / NTP / ACI</td></tr>
+            <tr><td>LC-20</td><td>Permeabilidad del concreto poroso</td><td>ACI 522R</td></tr>
+            <tr><td>LC-21</td><td>Permeabilidad – profundidad de penetración de agua</td><td>UNE-EN 12390-8</td></tr>
+            <tr><td>LC-22</td><td>Peso unitario del concreto, rendimiento</td><td>ASTM C138</td></tr>
+            <tr><td>LC-23</td><td>Reactividad del agregado – álcalis</td><td>ASTM C289</td></tr>
+            <tr><td>LC-24</td><td>Temperatura del concreto fresco</td><td>ASTM C1064</td></tr>
+            <tr><td>LC-25</td><td>Tiempo de fraguado del concreto</td><td>ASTM C403</td></tr>
+            <tr><td>LC-26</td><td>Tracción por compresión diametral</td><td>ASTM C496</td></tr>
+            <tr><td>LC-27</td><td>Verificación de diseño</td><td>ACI 211.1</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/geotecnia/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

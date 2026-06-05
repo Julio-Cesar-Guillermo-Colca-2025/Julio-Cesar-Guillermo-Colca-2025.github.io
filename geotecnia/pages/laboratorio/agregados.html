@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Laboratorio de Agregados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Laboratorio de Agregados</h1><p>Ensayos para evaluación de propiedades físicas y durabilidad</p></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="ensayos-table">
+        <table>
+          <thead><tr><th>Código</th><th>Descripción</th><th>Norma</th></tr></thead>
+          <tbody>
+            <tr><td>LA-10</td><td>Durabilidad en agregados con sulfato de magnesio (F)</td><td>ASTM C88</td></tr>
+            <tr><td>LA-11</td><td>Durabilidad en agregados con sulfato de magnesio (G)</td><td>ASTM C88</td></tr>
+            <tr><td>LA-12</td><td>Equivalente de arena (F)</td><td>ASTM D2419</td></tr>
+            <tr><td>LA-13</td><td>Gravedad específica y absorción (F)</td><td>ASTM C128</td></tr>
+            <tr><td>LA-14</td><td>Gravedad específica y absorción (G)</td><td>ASTM C127</td></tr>
+            <tr><td>LA-15</td><td>Impurezas orgánicas (F)</td><td>ASTM C40</td></tr>
+            <tr><td>LA-16</td><td>Índice de aplanamiento y alargamiento</td><td>MTC E221</td></tr>
+            <tr><td>LA-17</td><td>Índice de durabilidad (F, G)</td><td>ASTM D3744</td></tr>
+            <tr><td>LA-18</td><td>Índice de plasticidad del material que pasa el tamiz No 200</td><td>REF. ASTM D4318</td></tr>
+            <tr><td>LA-19</td><td>Material más fino que el tamiz No 200 (F, G)</td><td>REF. ASTM C117</td></tr>
+            <tr><td>LA-20</td><td>Partículas chatas y alargadas (G)</td><td>REF. ASTM D4791</td></tr>
+            <tr><td>LA-21</td><td>Partículas livianas – carbón y lignito (F, G)</td><td>REF. ASTM C123</td></tr>
+            <tr><td>LA-22</td><td>Peso unitario suelto y varillado (F, G, Glb)</td><td>REF. ASTM C29</td></tr>
+            <tr><td>LA-23</td><td>Terrones de arcilla y partículas friables (F, G)</td><td>REF. ASTM C142</td></tr>
+            <tr><td>LA-24</td><td>Valor azul de metileno (para arcillas, rellenos minerales)</td><td>ASTM C1777</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/geotecnia/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Misión y Visión</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Misión y Visión</h1></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="content-card">
+        <h2>Misión</h2>
+        <p>Brindar servicios de laboratorio de ensayos de materiales con alta confiabilidad técnica, oportunidad y compromiso con la calidad, contribuyendo al desarrollo seguro y sostenible de los proyectos de ingeniería y construcción en el Perú, mediante personal competente, equipos adecuados y un sistema de gestión orientado a la mejora continua.</p>
+        <h2>Visión</h2>
+        <p>Ser un laboratorio de referencia en el Perú en ensayos de materiales para ingeniería y construcción, reconocido por la confiabilidad de sus resultados, su competencia técnica, su enfoque en la calidad bajo ISO/IEC 17025 y su aporte al fortalecimiento de la infraestructura y el desarrollo del país.</p>
+        <h2>Valores</h2>
+        <ul>
+          <li><strong>Integridad:</strong> actuamos con ética y transparencia.</li>
+          <li><strong>Calidad:</strong> trabajamos con precisión y mejora continua.</li>
+          <li><strong>Compromiso:</strong> cumplimos con responsabilidad y puntualidad.</li>
+          <li><strong>Competencia técnica:</strong> actuamos con conocimiento y experiencia.</li>
+          <li><strong>Servicio:</strong> brindamos atención oportuna y confiable.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/geotecnia/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

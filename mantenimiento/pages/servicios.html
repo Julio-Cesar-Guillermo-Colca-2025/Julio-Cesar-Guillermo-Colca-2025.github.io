@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Servicios de Mantenimiento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/mantenimiento/css/style.css">
+</head>
+<body>
+<div id="preloader">...</div>
+<div id="mouseFollower"></div>
+<div class="topbar">...</div>
+<div id="header-placeholder"></div>
+<main>
+  <section class="page-header"><div class="container"><h1>Servicios Especializados</h1><p>Soluciones integrales para el sector minero e industrial</p></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-tools service-icon"></i>
+          <h3>Mantenimiento y Reparación</h3>
+          <p>Mantenimientos preventivos y predictivos in situ, calibración de balances dinámicos, lubricación móvil en obra, servicios de barrenado y soldadura especializada, reparación de cilindros hidráulicos, evaluación y diagnóstico de fallas, overhaul de maquinaria, consultorías y auditorías de mantenimiento, mantenimiento y reparación de puentes grúa, proyectos eléctricos industriales y sistemas de pararrayos Franklin Francés.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-industry service-icon"></i>
+          <h3>Planta Concentradora</h3>
+          <p>Mantenimientos preventivo y correctivo eléctrico, mantenimiento mecánico en áreas de chancado y flotación, fabricación, montaje y ampliación.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-truck service-icon"></i>
+          <h3>Planta de Transporte de Concentrados</h3>
+          <p>Mantenimiento eléctrico y mecánico en sistemas de recepción, almacenamiento y despacho de concentrados. Intervención en sistemas de transporte interno: fajas, bombas y equipos hidráulicos. Apoyo técnico en proyectos de mejora y expansión operativa.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cogs service-icon"></i>
+          <h3>Diseño y Fabricación</h3>
+          <p>Componentes y piezas mecánicas, fajas transportadoras, estructuras metálicas.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-gavel service-icon"></i>
+          <h3>Perforación y Voladura</h3>
+          <p>Planificación de perforación y voladura, plan de perforación, criterios de perforación, tonelajes necesarios a volar, estadísticas de perforación, costos involucrados, consumo de explosivos y costo total por tonelada.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-drafting-compass service-icon"></i>
+          <h3>Ingeniería Civil</h3>
+          <p>Ingeniería básica, ingeniería de detalle, construcción, ingeniería vial, supervisión y gestión, asesoramiento técnico, optimización y solución de problemas.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-building service-icon"></i>
+          <h3>Montaje de Estructuras Metálicas</h3>
+          <p>Edificaciones metálicas e infraestructura en general, construcción de puentes grúa, montaje de talleres de mantenimiento, fabricación de pasarelas, soportes, escaleras y barandas.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chart-line service-icon"></i>
+          <h3>Ingeniería al Detalle - Casa Blanca</h3>
+          <p>Desarrollo de ingeniería de detalle para proyectos industriales y mineros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="footer-placeholder"></div>
+<a href="https://wa.me/51963665214" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/mantenimiento/js/preloader.js"></script>
+<script src="/mantenimiento/js/mouse-follower.js"></script>
+<script>
+  AOS.init();
+  fetch('/mantenimiento/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/mantenimiento/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/mantenimiento/js/menu.js"></script>
+</body>
+</html>

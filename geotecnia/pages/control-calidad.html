@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Control de Calidad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">...</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Control de Calidad en Obras Civiles</h1></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="content-card">
+        <h2>Evaluación de rellenos y estructuras</h2>
+        <p>Ofrecemos servicios de control de calidad en obras civiles tales como evaluación de estructuras y evaluación de capas de relleno.</p>
+        <div class="ensayos-table">
+          <table>
+            <thead><tr><th>Código</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>CC-01</td><td>Control de compactación en capas de rellenos y subrasantes</td></tr>
+              <tr><td>CC-02</td><td>Evaluación estructural en obras de concreto</td></tr>
+              <tr><td>CC-03</td><td>Control de calidad en pavimentos flexibles</td></tr>
+              <tr><td>CC-04</td><td>Evaluación de resistencia de capas de rellenos (CBR in situ, PDC)</td></tr>
+              <tr><td>CC-05</td><td>Evaluación de resistencia de suelos in situ (SPT, DPL)</td></tr>
+              <tr><td>CC-06</td><td>Distribución granulométrica in situ</td></tr>
+              <tr><td>CC-07</td><td>Verificación de diseño de columnas de grava</td></tr>
+              <tr><td>CC-08</td><td>Diseño de columnas de grava en suelos licuables</td></tr>
+              <tr><td>CC-09</td><td>Evaluación de potencial de licuación con SPT</td></tr>
+              <tr><td>CC-10</td><td>Perforación rotacional y muestreo de suelos y rocas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init();
+  fetch('/geotecnia/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/geotecnia/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

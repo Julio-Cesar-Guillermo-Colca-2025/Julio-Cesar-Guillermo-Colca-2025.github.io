@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Historia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Nuestra Historia</h1></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="content-card">
+        <p><strong>ZEMCO INGENIEROS S.A.C.</strong> inicia sus actividades en febrero de 2018 bajo el nombre comercial de Ingeniería Geotécnica y Control de Calidad S.A.C. como Laboratorio de Ensayos de Materiales, extendiendo sus servicios a Estudios Geotécnicos, Geofísica y Topografía.</p>
+        <p>En 2019, en alianza con ASTM, se convierte en miembro corporativo de la Asociación de ensayos de materiales más importante a nivel internacional, membresía que mantiene hasta la fecha.</p>
+        <p>En 2021 implementa su Sistema de Gestión de Calidad bajo ISO 9001:2015, logrando la certificación en 2022 como compromiso con la mejora continua.</p>
+        <p>ZEMCO cuenta con homologación de sus sistemas de gestión de calidad, medio ambiente, seguridad y salud ocupacional por la certificadora Hodelpe en 2022.</p>
+        <div class="btn-brochure">
+          <a href="/geotecnia/pdf/Brochure-ZEMCO.pdf" class="btn btn-primary" download>Descargar brochure <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+  fetch('/geotecnia/footer.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

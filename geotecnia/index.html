@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Laboratorio y Control de Calidad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="/geotecnia/img/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Zemco Ingenieros S.A.C.</h1>
+      <p>Compromiso con la calidad, seguridad y buenas prácticas profesionales.</p>
+      <div class="hero-buttons">
+        <a href="/geotecnia/pages/laboratorio/suelos.html" class="btn btn-primary">Nuestros Servicios <i class="fas fa-arrow-right"></i></a>
+        <a href="/geotecnia/pages/contacto.html" class="btn btn-outline">Solicitar Cotización</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios detallados -->
+  <section class="servicios-detallados" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Nuestros <span style="color:#2A6DFF;">Servicios</span></h2>
+      <div class="services-grid">
+        <div class="service-card"><i class="fas fa-flask service-icon"></i><h3>Laboratorio Geotécnico</h3><p>Equipos de última generación.</p></div>
+        <div class="service-card"><i class="fas fa-ruler-combined service-icon"></i><h3>Ensayos Geotécnicos</h3><p>Caracterización de terrenos.</p></div>
+        <div class="service-card"><i class="fas fa-mountain service-icon"></i><h3>Estudio Geológico</h3><p>Perfil sísmico, capacidad portante.</p></div>
+        <div class="service-card"><i class="fas fa-layer-group service-icon"></i><h3>Estudio de Suelos</h3><p>Mecánica de suelos y geotecnia.</p></div>
+        <div class="service-card"><i class="fas fa-drafting-compass service-icon"></i><h3>Estudio Topográfico</h3><p>Georreferenciación del terreno.</p></div>
+        <div class="service-card"><i class="fas fa-chart-line service-icon"></i><h3>Servicios en Ingeniería</h3><p>Control de calidad y expedientes técnicos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clientes -->
+  <section id="clientes" class="clientes section-padding" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Empresas que confían en <span style="color:#2A6DFF;">nosotros</span></h2>
+      <div class="clientes-grid">
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-1.png" alt="Activos Mineros"><p>Activos Mineros S.A.C.</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-2.png" alt="Consorcio San Camilo"><p>Consorcio San Camilo</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-3.png" alt="GR Pasco"><p>Gobierno Regional de Pasco</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-4.png" alt="JJC GRUPO"><p>JJC GRUPO</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-5.png" alt="NEXA"><p>NEXA Resources</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-6.png" alt="PANAM"><p>PANAM S.A.C.</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-7.png" alt="MD Yanacancha"><p>Municipalidad Distrital de Yanacancha</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-8.png" alt="MD Pasco"><p>Honorable Municipalidad Provincial de Pasco</p></div>
+        <div class="cliente-item"><img src="/geotecnia/img/clientes/item-9.png" alt="Otro cliente"><p>Otros clientes</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+  fetch('/geotecnia/footer.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>

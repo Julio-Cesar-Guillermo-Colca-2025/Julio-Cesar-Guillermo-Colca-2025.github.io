@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEMCO | Staff de Profesionales</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/geotecnia/css/style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"><img src="/geotecnia/img/logo.png" alt="ZEMCO"><div class="loader-text">ZEMCO</div></div>
+</div>
+<div id="mouseFollower"></div>
+
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+51963665214"><i class="fas fa-phone-alt"></i> +51 963 665 214</a>
+    <a href="mailto:jcespinoza@zemcoingenieros.com"><i class="fas fa-envelope"></i> jcespinoza@zemcoingenieros.com</a>
+    <span><i class="fas fa-map-marker-alt"></i> Calle Tarma N° 215, Paragsha - Simón Bolívar - Pasco</span>
+  </div>
+</div>
+
+<div id="header-placeholder"></div>
+
+<main>
+  <section class="page-header"><div class="container"><h1>Staff de profesionales</h1></div></section>
+  <section class="page-content">
+    <div class="container">
+      <div class="staff-grid">
+        <div class="staff-card"><img src="/geotecnia/img/staff/jce.png" alt="Juan Carlos"><h4>Juan Carlos Espinoza</h4><p>Gerente General</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/arnaldo.jpg" alt="Arnaldo"><h4>Ing. Arnaldo Pérez C.</h4><p>Gerente Técnico</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/vladimir.jpg" alt="Vladimir"><h4>Ing. Vladimir Gutiérrez</h4><p>Jefe de Proyectos</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/natalia.jpg" alt="Natalia"><h4>Natalia Roque Vera</h4><p>Coordinadora de Calidad</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/maryorick.jpg" alt="Maryorick"><h4>Ing. Maryorick Valle</h4><p>Jefe de Laboratorio</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/robinson.jpg" alt="Robinson"><h4>Robinson Leyva Viton</h4><p>Técnico de Laboratorio</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/jimi.jpg" alt="Jimi"><h4>Jimi Cerquera Encinas</h4><p>Auxiliar de Laboratorio</p></div>
+        <div class="staff-card"><img src="/geotecnia/img/staff/jacob.jpg" alt="Jacob"><h4>Jacob Cristobal Vidal</h4><p>Coordinador de ventas</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<a href="https://wa.me/51963665214" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/geotecnia/js/preloader.js"></script>
+<script src="/geotecnia/js/mouse-follower.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+  fetch('/geotecnia/header.html').then(r=>r.text()).then(d=>document.getElementById('header-placeholder').innerHTML=d);
+  fetch('/geotecnia/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer-placeholder').innerHTML=d);
+</script>
+<script src="/geotecnia/js/menu.js"></script>
+</body>
+</html>
