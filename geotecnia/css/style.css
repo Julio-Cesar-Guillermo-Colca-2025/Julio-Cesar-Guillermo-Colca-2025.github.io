@@ -61,14 +61,18 @@ section {
   box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
 }
 .btn-outline {
-  background: transparent;
+   background: transparent;
   border: 2px solid #2A6DFF;
   color: #2A6DFF;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 .btn-outline:hover {
   background: #2A6DFF;
   color: white;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 /* ===== PRELOADER ===== */
@@ -665,4 +669,28 @@ tr:nth-child(even) {
   .cliente-item img {
     height: 70px;
   }
+  /* Aumento de fuente y espaciado */
+body {
+  font-size: 1rem; /* base */
+  line-height: 1.5;
+}
+h1, .hero-content h1, .page-header h1 {
+  font-size: 3rem !important;
+  letter-spacing: -0.02em;
+}
+h2, .section-title {
+  font-size: 2.2rem !important;
+  margin-bottom: 1.5rem;
+}
+p, .service-card p, .project-item p, .content-card p {
+  font-size: 1.05rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1rem;
+}
+.hero-stats .stat-number {
+  font-size: 2.8rem !important;
+}
+.hero-stats .stat-label {
+  font-size: 0.9rem !important;
+}
 }
